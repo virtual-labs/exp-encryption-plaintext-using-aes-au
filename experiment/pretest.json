@@ -2,37 +2,37 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Which AES operation mixes the bytes within each column of the state?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "SubBytes",
+        "b": "ShiftRows",
+        "c": "MixColumns",
+        "d": "AddRoundKey"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect. SubBytes is a non-linear substitution step that affects each byte individually.",
+        "b": "Incorrect. ShiftRows is a transposition step that permutes bytes across rows.",
+        "c": "Correct. MixColumns is a diffusion step that combines the bytes within each column.",
+        "d": "Incorrect. AddRoundKey is a linear mixing step that combines the state with the round key."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "What is the purpose of the ShiftRows step in AES encryption?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "To substitute bytes using the S-box",
+        "b": "To permute the bytes within the state",
+        "c": "To expand the key",
+        "d": "To add the round key to the state"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect. Substitution using the S-box is performed in the SubBytes step.",
+        "b": "Correct. ShiftRows permutes bytes within the state to ensure diffusion.",
+        "c": "Incorrect. Key expansion is not the purpose of ShiftRows; it is a separate process.",
+        "d": "Incorrect. Adding the round key to the state is performed in the AddRoundKey step."
       },
-      "correctAnswer": "c",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]
